@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Kavoon&family=Miltonian+Tattoo&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rum+Raisin&display=swap" rel="stylesheet">
+  <title>Suit Game</title>
+
+</head>
+<body>
+<nav class="navbar">
+  <a href="https://kinbasari.github.io/myportofolio.github.io/" class="navbar-logo"><span>Kin</span>Basari</a>
+</nav>
+
+<!-- Hero Section start -->
+<section class="hero" id="home">
+  <main class="content">
+    <h1>Semoga harimu selalu <span>menyenangkan</span> setiap saat.</h1>
+    <p> &nbsp; &nbsp; &nbsp; &nbsp; Tetap fokus pada tujuanmu,&nbsp; jangan biarkan rintangan menghalangimu. Ingat, langit cerah selalu datang setelah hujan deras.</p><br><p></p>
+ </main>
+</section>
+<!--Hero Section end-->
+
+<!-- Suit Game start -->
+<section id="suit-game" class="suit-game">
+<h1>Pilih <span>Sesukamu</span></h1>
+<div class="content">
+  <h1></h1>
+
+  <div class="choices">
+  <button class="choice" onclick="playGame('Gajah')">🐘</button>
+  <button class="choice" onclick="playGame('Orang')">👦</button>
+  <button class="choice" onclick="playGame('Semut')">🐜</button>
+ </div>
+ <div class="result" id="result"></div>
+</div>
+</section>
+
+<!-- Audio Controls -->
+<audio id="correctsound" src="sound/correctsound.mp3"></audio>
+<audio id="wrongsound" src="sound/wrongsound.mp3"></audio>
+<audio id="serisound" src="sound/kiwkiw.mp3"></audio>
+
+<script src="javascripts/script.js"></script>
+</body>
+</html>
