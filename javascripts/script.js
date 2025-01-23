@@ -5,7 +5,7 @@ function playGame(playerChoice) {
   clearTimeout(resultTimeout);
   document.getElementById('result').innerHTML = '';
   
-  const choices = ['Gajah', 'Orang', 'Semut'];
+  const choices = ['Gajah', 'Manusia', 'Semut'];
   const computerChoice = choices[Math.floor(Math.random() * choices.length)];
   
   let result = '';
@@ -15,8 +15,8 @@ function playGame(playerChoice) {
     result = 'Seri';
     sound = document.getElementById('serisound');
     } else if (
-      (playerChoice === 'Gajah' && computerChoice === 'Orang') ||
-      (playerChoice === 'Orang' && computerChoice === 'Semut') ||
+      (playerChoice === 'Gajah' && computerChoice === 'Manusia') ||
+      (playerChoice === 'Manusia' && computerChoice === 'Semut') ||
       (playerChoice === 'Semut' && computerChoice === 'Gajah')
       ) {
         result = 'Menang';
