@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kinbasari/minigameguesscolor/styles/popup.css">
   <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Kavoon&family=Miltonian+Tattoo&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rum+Raisin&display=swap" rel="stylesheet">
   <title>Suit Game</title>
 
@@ -30,7 +31,7 @@
 
   <div class="choices">
   <button class="choice" onclick="playGame('Gajah')">🐘</button>
-  <button class="choice" onclick="playGame('Orang')">👦</button>
+  <button class="choice" onclick="playGame('Manusia')">👦</button>
   <button class="choice" onclick="playGame('Semut')">🐜</button>
  </div>
  <div class="result" id="result"></div>
@@ -42,6 +43,28 @@
 <audio id="wrongsound" src="sound/wrongsound.mp3"></audio>
 <audio id="serisound" src="sound/serisound.mp3"></audio>
 
+  <!-- popup content -->
+<div class="popup-overlay" id="popup">
+ <div class="popup-content">
+ <button onclick="closePopup()" class="close-popup">Start</button>
+ <h2>Aturan Permainan</h2>
+ <p></p>
+
+ <hr>
+ <div class="popup-paragraph">
+<span>1. Aturan dasar: </span>Permainan ini adalah variasi lokal dari permainan tradisional di Indonesia. Sebenarnya permainan ini melibatkan dua pemain yang secara bersamaan memilih salah satu dari tiga simbol tetapi disini pemain akan bermain melawan komputer.
+<br><span>2. Penentuan pemenang: </span>Gajah lebih kuat secara fisik dibandingkan manusia, Manusia dapat dengan mudah mengalahkan semut, dan Semut dapat mengganggu gajah dengan menyerang bagian tubuh yang sensitif seperti mata atau telinga. Jika pilihan sama hasilnya dianggap seri.
+<br><span>3. Sisi lain: </span>Permainan ini tidak hanya menghibur tetapi juga mengajarkan nilai-nilai seperti strategi dan pemahaman tentang kekuatan serta kelemahan masing-masing simbol.
+<br><span>4. Filosofi permainan: </span>Meskipun permainan ini sederhana, ia mengandung filosofi bahwa setiap makhluk, besar atau kecil, memiliki kelebihan dan kekurangannya sendiri.
+<p></p>
+<br>
+<p class="end-prg">Selamat bermain dan semoga sukses dalam menebak pilihan yang tepat!</p>
+</div>
+ </div>
+</div>
+  
 <script src="javascripts/script.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/kinbasari/minigameguesscolor/scripts/popup.js"></script>
+
 </body>
 </html>
