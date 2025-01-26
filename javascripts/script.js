@@ -37,3 +37,11 @@ function playGame(playerChoice) {
       }, 1000);
     }
   
+// Sound button
+const buttonSound = new Audio('../sound/pressbtn.mp3'); // Ganti dengan path file suara tombol
+
+// Fungsi untuk memutar suara tombol
+function playButtonSound() {
+  buttonSound.currentTime = 0; // Reset audio ke awal
+  buttonSound.play();
+}
