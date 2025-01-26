@@ -160,6 +160,7 @@ background-color: #000;
 }
   
 .choices button:active {
+background-color: var(--pita);
 box-shadow: 0 5px var(--bash);
 transform: translateY(2.5rem);
 }
