@@ -38,7 +38,7 @@ function playGame(playerChoice) {
     }
   
 // Sound button
-const buttonSound = new Audio('../sound/pressbtn.mp3'); // Ganti dengan path file suara tombol
+const buttonSound = new Audio('../sound/wrongsound.mp3'); // Ganti dengan path file suara tombol
 
 // Fungsi untuk memutar suara tombol
 function playButtonSound() {
