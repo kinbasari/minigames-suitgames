@@ -30,9 +30,9 @@
   <h1></h1>
 
   <div class="choices">
-  <button class="choice" onclick="playGame('Gajah'); playButtonSound();">🐘</button>
-  <button class="choice" onclick="playGame('Manusia'); playButtonSound();">👦</button>
-  <button class="choice" onclick="playGame('Semut'); playButtonSound();">🐜</button>
+  <button id="play-pressbtn" class="choice" onclick="playGame('Gajah')">🐘</button>
+  <button id="play-pressbtn" class="choice" onclick="playGame('Manusia')">👦</button>
+  <button id="play-pressbtn" class="choice" onclick="playGame('Semut')">🐜</button>
  </div>
  <div class="result" id="result"></div>
 </div>
@@ -42,6 +42,7 @@
 <audio id="correctsound" src="sound/correctsound.mp3"></audio>
 <audio id="wrongsound" src="sound/wrongsound.mp3"></audio>
 <audio id="serisound" src="sound/serisound.mp3"></audio>
+<audio id="buttonSound" src="sound/pressbtn.mp3"></audio>
 
   <!-- popup content -->
 <div class="popup-overlay" id="popup">
