@@ -48,7 +48,7 @@ function playButtonSound() {
 }
 
 // Tambahkan event listener ke semua tombol dengan kelas 'play-sound'
-const buttons = document.querySelectorAll('.play-pressbtn');
+const buttons = document.querySelectorAll('#play-pressbtn');
 buttons.forEach(button => {
   button.addEventListener('click', playButtonSound);
 });
