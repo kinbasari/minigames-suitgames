@@ -38,10 +38,17 @@ function playGame(playerChoice) {
     }
   
 // Sound button
-const buttonSound = new Audio('../sound/wrongsound.mp3'); // Ganti dengan path file suara tombol
+// Ambil elemen audio berdasarkan ID
+const buttonSound = document.getElementById('buttonSound');
 
 // Fungsi untuk memutar suara tombol
 function playButtonSound() {
   buttonSound.currentTime = 0; // Reset audio ke awal
   buttonSound.play();
 }
+
+// Tambahkan event listener ke semua tombol dengan kelas 'play-sound'
+const buttons = document.querySelectorAll('.play-pressbtn');
+buttons.forEach(button => {
+  button.addEventListener('click', playButtonSound);
+});
